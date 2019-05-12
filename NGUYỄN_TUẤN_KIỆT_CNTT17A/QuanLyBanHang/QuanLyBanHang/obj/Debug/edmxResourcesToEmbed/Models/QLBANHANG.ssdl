@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLTHONGTINMAYTINHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DONHANG">
+    <Key>
+      <PropertyRef Name="MADH" />
+    </Key>
+    <Property Name="MADH" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MAKH" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MANV" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TIMEXUAT" Type="datetime" Nullable="false" />
+    <Property Name="THANHTIEN" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="MAKH" />
+    </Key>
+    <Property Name="MAKH" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TENKH" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="14" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHACUNGCAP">
+    <Key>
+      <PropertyRef Name="MANCC" />
+    </Key>
+    <Property Name="MANCC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TENNCC" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="FAX" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHAKHO">
+    <Key>
+      <PropertyRef Name="MANK" />
+    </Key>
+    <Property Name="MANK" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TENNK" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="MANV" />
+    </Key>
+    <Property Name="MANV" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TENNV" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SEX" Type="int" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SDT" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar(max)" Nullable="false" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="QUYEN" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SANPHAM">
+    <Key>
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="MASP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TENSP" Type="varchar(max)" Nullable="false" />
+    <Property Name="THUONGHIEU" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="THONGTIN" Type="varchar(max)" Nullable="false" />
+    <Property Name="LOAISP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SOLUONG" Type="int" Nullable="false" />
+    <Property Name="GIANHAP" Type="money" Nullable="false" />
+    <Property Name="GIABAN" Type="money" Nullable="false" />
+    <Property Name="TIMENHAP" Type="datetime" Nullable="false" />
+    <Property Name="MANCC" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MANK" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IMAGES" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="THONGTINDONHANG">
+    <Key>
+      <PropertyRef Name="MADH" />
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="MADH" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MASP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SOLUONG" Type="int" Nullable="false" />
+    <Property Name="TIEN" Type="money" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLTHONGTINMAYTINH.dbo.THONGKEDONHANGDABAN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="THONGKEDONHANGDABAN">
+    <Key>
+      <PropertyRef Name="MADH" />
+      <PropertyRef Name="TENKH" />
+      <PropertyRef Name="TENNV" />
+      <PropertyRef Name="TIMEXUAT" />
+      <PropertyRef Name="THANHTIEN" />
+    </Key>
+    <Property Name="MADH" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TENKH" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TENNV" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TIMEXUAT" Type="datetime" Nullable="false" />
+    <Property Name="THANHTIEN" Type="money" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLTHONGTINMAYTINH.dbo.THONGKEDONHANGDABAN_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="THONGKEDONHANGDABAN_1">
+    <Key>
+      <PropertyRef Name="MAKH" />
+      <PropertyRef Name="TENKH" />
+    </Key>
+    <Property Name="MAKH" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TENKH" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="THANHTIEN" Type="money" />
+  </EntityType>
+  <Association Name="FK_DH_KH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="MAKH" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="MAKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DH_NV">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="MANV" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="MANV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INFO_DH">
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="1" />
+    <End Role="THONGTINDONHANG" Type="Self.THONGTINDONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DONHANG">
+        <PropertyRef Name="MADH" />
+      </Principal>
+      <Dependent Role="THONGTINDONHANG">
+        <PropertyRef Name="MADH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INFO_SP">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
+    <End Role="THONGTINDONHANG" Type="Self.THONGTINDONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="THONGTINDONHANG">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SP_NCC">
+    <End Role="NHACUNGCAP" Type="Self.NHACUNGCAP" Multiplicity="1" />
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHACUNGCAP">
+        <PropertyRef Name="MANCC" />
+      </Principal>
+      <Dependent Role="SANPHAM">
+        <PropertyRef Name="MANCC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SP_NK">
+    <End Role="NHAKHO" Type="Self.NHAKHO" Multiplicity="1" />
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHAKHO">
+        <PropertyRef Name="MANK" />
+      </Principal>
+      <Dependent Role="SANPHAM">
+        <PropertyRef Name="MANK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="loadINFORDONHANG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MADH" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="seachName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SeachNameKhachHang" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TenKH" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SeachNameNhaCungCap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TenNCC" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SeachNameNhaKHo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TenNK" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SeachNameSanPham" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TenSP" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ThongKe" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="THONGKETHEONGAY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="THONGKE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="THONGKETHEOTHANG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="THONGKE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="Top_5_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Top_5_SP1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="UpdateSoLuong" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MaSP" Type="varchar" Mode="In" />
+    <Parameter Name="soLuong" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="QLTHONGTINMAYTINHModelStoreContainer">
+    <EntitySet Name="DONHANG" EntityType="Self.DONHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHACUNGCAP" EntityType="Self.NHACUNGCAP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHAKHO" EntityType="Self.NHAKHO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THONGTINDONHANG" EntityType="Self.THONGTINDONHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THONGKEDONHANGDABAN" EntityType="Self.THONGKEDONHANGDABAN" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [THONGKEDONHANGDABAN].[MADH] AS [MADH], 
+    [THONGKEDONHANGDABAN].[TENKH] AS [TENKH], 
+    [THONGKEDONHANGDABAN].[TENNV] AS [TENNV], 
+    [THONGKEDONHANGDABAN].[TIMEXUAT] AS [TIMEXUAT], 
+    [THONGKEDONHANGDABAN].[THANHTIEN] AS [THANHTIEN]
+    FROM [dbo].[THONGKEDONHANGDABAN] AS [THONGKEDONHANGDABAN]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="THONGKEDONHANGDABAN_1" EntityType="Self.THONGKEDONHANGDABAN_1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [THONGKEDONHANGDABAN_1].[MAKH] AS [MAKH], 
+    [THONGKEDONHANGDABAN_1].[TENKH] AS [TENKH], 
+    [THONGKEDONHANGDABAN_1].[THANHTIEN] AS [THANHTIEN]
+    FROM [dbo].[THONGKEDONHANGDABAN_1] AS [THONGKEDONHANGDABAN_1]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_DH_KH" Association="Self.FK_DH_KH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="DONHANG" EntitySet="DONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DH_NV" Association="Self.FK_DH_NV">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="DONHANG" EntitySet="DONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INFO_DH" Association="Self.FK_INFO_DH">
+      <End Role="DONHANG" EntitySet="DONHANG" />
+      <End Role="THONGTINDONHANG" EntitySet="THONGTINDONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INFO_SP" Association="Self.FK_INFO_SP">
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+      <End Role="THONGTINDONHANG" EntitySet="THONGTINDONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SP_NCC" Association="Self.FK_SP_NCC">
+      <End Role="NHACUNGCAP" EntitySet="NHACUNGCAP" />
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SP_NK" Association="Self.FK_SP_NK">
+      <End Role="NHAKHO" EntitySet="NHAKHO" />
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,140 @@
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKe.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_BanHang.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKeBanHang.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_KhachHang.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhanVien.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhân_Viên.fAddNhanVien.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_SanPham.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaCungCap.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaKho.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Cung_Cấp.fAddNhaCungCap.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Sản_Phẩm.fAddInfoSanPham.resources
+D:\Visual Studio 2017\DoAn\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Thống_Kê_Bán_Hàng.fShowDonHang.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_BanHang.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_KhachHang.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaCungCap.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaKho.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhanVien.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_SanPham.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKe.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKeBanHang.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Cung_Cấp.fAddNhaCungCap.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhân_Viên.fAddNhanVien.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Sản_Phẩm.fAddInfoSanPham.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Thống_Kê_Bán_Hàng.fShowDonHang.resources
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.dll
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.dll
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.xml
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.xml
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+E:\Downloads\Đồ Án Quản Lý Bán Hàng\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.finfoBanHang.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.dll
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.dll
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.xml
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.xml
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_BanHang.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_KhachHang.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaCungCap.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaKho.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhanVien.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_SanPham.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKe.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKeBanHang.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.finfoBanHang.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Cung_Cấp.fAddNhaCungCap.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhân_Viên.fAddNhanVien.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Sản_Phẩm.fAddInfoSanPham.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Thống_Kê_Bán_Hàng.fShowDonHang.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Kho.fAddNhaKho.resources
+D:\Đồ Án\Đồ Án Quản Lý Bán Hàng\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.login.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.dll
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.xml
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_BanHang.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_KhachHang.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaCungCap.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaKho.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhanVien.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_SanPham.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKe.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKeBanHang.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.finfoBanHang.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.login.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Cung_Cấp.fAddNhaCungCap.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Kho.fAddNhaKho.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhân_Viên.fAddNhanVien.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Sản_Phẩm.fAddInfoSanPham.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Thống_Kê_Bán_Hàng.fShowDonHang.resources
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\Evans\Desktop\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.dll
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.xml
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_BanHang.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_KhachHang.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaCungCap.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhaKho.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_NhanVien.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_SanPham.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKe.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Controllers.US_ThongKeBanHang.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.finfoBanHang.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.login.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Cung_Cấp.fAddNhaCungCap.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhà_Kho.fAddNhaKho.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Nhân_Viên.fAddNhanVien.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Sản_Phẩm.fAddInfoSanPham.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Views.Thống_Kê_Bán_Hàng.fShowDonHang.resources
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+E:\Projects\NGUYỄN_TUẤN_KIỆT_CNTT17A\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb

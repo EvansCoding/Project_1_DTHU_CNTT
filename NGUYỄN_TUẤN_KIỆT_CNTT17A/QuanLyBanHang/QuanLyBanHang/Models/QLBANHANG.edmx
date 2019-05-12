@@ -1,0 +1,894 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QLTHONGTINMAYTINHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DONHANG">
+          <Key>
+            <PropertyRef Name="MADH" />
+          </Key>
+          <Property Name="MADH" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MAKH" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MANV" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TIMEXUAT" Type="datetime" Nullable="false" />
+          <Property Name="THANHTIEN" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KHACHHANG">
+          <Key>
+            <PropertyRef Name="MAKH" />
+          </Key>
+          <Property Name="MAKH" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TENKH" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SDT" Type="nvarchar" MaxLength="14" Nullable="false" />
+          <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="status" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NHACUNGCAP">
+          <Key>
+            <PropertyRef Name="MANCC" />
+          </Key>
+          <Property Name="MANCC" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TENNCC" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SDT" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="FAX" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="EMAIL" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NHAKHO">
+          <Key>
+            <PropertyRef Name="MANK" />
+          </Key>
+          <Property Name="MANK" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TENNK" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NHANVIEN">
+          <Key>
+            <PropertyRef Name="MANV" />
+          </Key>
+          <Property Name="MANV" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TENNV" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SEX" Type="int" Nullable="false" />
+          <Property Name="DIACHI" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SDT" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="EMAIL" Type="varchar(max)" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="QUYEN" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SANPHAM">
+          <Key>
+            <PropertyRef Name="MASP" />
+          </Key>
+          <Property Name="MASP" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TENSP" Type="varchar(max)" Nullable="false" />
+          <Property Name="THUONGHIEU" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="THONGTIN" Type="varchar(max)" Nullable="false" />
+          <Property Name="LOAISP" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SOLUONG" Type="int" Nullable="false" />
+          <Property Name="GIANHAP" Type="money" Nullable="false" />
+          <Property Name="GIABAN" Type="money" Nullable="false" />
+          <Property Name="TIMENHAP" Type="datetime" Nullable="false" />
+          <Property Name="MANCC" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MANK" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="IMAGES" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="THONGTINDONHANG">
+          <Key>
+            <PropertyRef Name="MADH" />
+            <PropertyRef Name="MASP" />
+          </Key>
+          <Property Name="MADH" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MASP" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="SOLUONG" Type="int" Nullable="false" />
+          <Property Name="TIEN" Type="money" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'QLTHONGTINMAYTINH.dbo.THONGKEDONHANGDABAN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="THONGKEDONHANGDABAN">
+          <Key>
+            <PropertyRef Name="MADH" />
+            <PropertyRef Name="TENKH" />
+            <PropertyRef Name="TENNV" />
+            <PropertyRef Name="TIMEXUAT" />
+            <PropertyRef Name="THANHTIEN" />
+          </Key>
+          <Property Name="MADH" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TENKH" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TENNV" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TIMEXUAT" Type="datetime" Nullable="false" />
+          <Property Name="THANHTIEN" Type="money" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'QLTHONGTINMAYTINH.dbo.THONGKEDONHANGDABAN_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="THONGKEDONHANGDABAN_1">
+          <Key>
+            <PropertyRef Name="MAKH" />
+            <PropertyRef Name="TENKH" />
+          </Key>
+          <Property Name="MAKH" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TENKH" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="THANHTIEN" Type="money" />
+        </EntityType>
+        <Association Name="FK_DH_KH">
+          <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+          <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACHHANG">
+              <PropertyRef Name="MAKH" />
+            </Principal>
+            <Dependent Role="DONHANG">
+              <PropertyRef Name="MAKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DH_NV">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+          <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="DONHANG">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INFO_DH">
+          <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="1" />
+          <End Role="THONGTINDONHANG" Type="Self.THONGTINDONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DONHANG">
+              <PropertyRef Name="MADH" />
+            </Principal>
+            <Dependent Role="THONGTINDONHANG">
+              <PropertyRef Name="MADH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INFO_SP">
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
+          <End Role="THONGTINDONHANG" Type="Self.THONGTINDONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANPHAM">
+              <PropertyRef Name="MASP" />
+            </Principal>
+            <Dependent Role="THONGTINDONHANG">
+              <PropertyRef Name="MASP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SP_NCC">
+          <End Role="NHACUNGCAP" Type="Self.NHACUNGCAP" Multiplicity="1" />
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHACUNGCAP">
+              <PropertyRef Name="MANCC" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="MANCC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SP_NK">
+          <End Role="NHAKHO" Type="Self.NHAKHO" Multiplicity="1" />
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHAKHO">
+              <PropertyRef Name="MANK" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="MANK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="loadINFORDONHANG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MADH" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="seachName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SeachNameKhachHang" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TenKH" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SeachNameNhaCungCap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TenNCC" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SeachNameNhaKHo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TenNK" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SeachNameSanPham" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TenSP" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="ThongKe" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="THONGKETHEONGAY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="THONGKE" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="THONGKETHEOTHANG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="THONGKE" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="Top_5_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Top_5_SP1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="UpdateSoLuong" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MaSP" Type="varchar" Mode="In" />
+          <Parameter Name="soLuong" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="QLTHONGTINMAYTINHModelStoreContainer">
+          <EntitySet Name="DONHANG" EntityType="Self.DONHANG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NHACUNGCAP" EntityType="Self.NHACUNGCAP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NHAKHO" EntityType="Self.NHAKHO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="THONGTINDONHANG" EntityType="Self.THONGTINDONHANG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="THONGKEDONHANGDABAN" EntityType="Self.THONGKEDONHANGDABAN" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [THONGKEDONHANGDABAN].[MADH] AS [MADH], 
+    [THONGKEDONHANGDABAN].[TENKH] AS [TENKH], 
+    [THONGKEDONHANGDABAN].[TENNV] AS [TENNV], 
+    [THONGKEDONHANGDABAN].[TIMEXUAT] AS [TIMEXUAT], 
+    [THONGKEDONHANGDABAN].[THANHTIEN] AS [THANHTIEN]
+    FROM [dbo].[THONGKEDONHANGDABAN] AS [THONGKEDONHANGDABAN]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="THONGKEDONHANGDABAN_1" EntityType="Self.THONGKEDONHANGDABAN_1" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [THONGKEDONHANGDABAN_1].[MAKH] AS [MAKH], 
+    [THONGKEDONHANGDABAN_1].[TENKH] AS [TENKH], 
+    [THONGKEDONHANGDABAN_1].[THANHTIEN] AS [THANHTIEN]
+    FROM [dbo].[THONGKEDONHANGDABAN_1] AS [THONGKEDONHANGDABAN_1]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_DH_KH" Association="Self.FK_DH_KH">
+            <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+            <End Role="DONHANG" EntitySet="DONHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DH_NV" Association="Self.FK_DH_NV">
+            <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+            <End Role="DONHANG" EntitySet="DONHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INFO_DH" Association="Self.FK_INFO_DH">
+            <End Role="DONHANG" EntitySet="DONHANG" />
+            <End Role="THONGTINDONHANG" EntitySet="THONGTINDONHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INFO_SP" Association="Self.FK_INFO_SP">
+            <End Role="SANPHAM" EntitySet="SANPHAM" />
+            <End Role="THONGTINDONHANG" EntitySet="THONGTINDONHANG" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SP_NCC" Association="Self.FK_SP_NCC">
+            <End Role="NHACUNGCAP" EntitySet="NHACUNGCAP" />
+            <End Role="SANPHAM" EntitySet="SANPHAM" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SP_NK" Association="Self.FK_SP_NK">
+            <End Role="NHAKHO" EntitySet="NHAKHO" />
+            <End Role="SANPHAM" EntitySet="SANPHAM" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLTHONGTINMAYTINHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DONHANG">
+          <Key>
+            <PropertyRef Name="MADH" />
+          </Key>
+          <Property Name="MADH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MAKH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MANV" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TIMEXUAT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="THANHTIEN" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_DH_KH" FromRole="DONHANG" ToRole="KHACHHANG" />
+          <NavigationProperty Name="NHANVIEN" Relationship="Self.FK_DH_NV" FromRole="DONHANG" ToRole="NHANVIEN" />
+          <NavigationProperty Name="THONGTINDONHANGs" Relationship="Self.FK_INFO_DH" FromRole="DONHANG" ToRole="THONGTINDONHANG" />
+        </EntityType>
+        <EntityType Name="KHACHHANG">
+          <Key>
+            <PropertyRef Name="MAKH" />
+          </Key>
+          <Property Name="MAKH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENKH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SDT" Type="String" MaxLength="14" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DIACHI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="status" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DONHANGs" Relationship="Self.FK_DH_KH" FromRole="KHACHHANG" ToRole="DONHANG" />
+        </EntityType>
+        <EntityType Name="NHACUNGCAP">
+          <Key>
+            <PropertyRef Name="MANCC" />
+          </Key>
+          <Property Name="MANCC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENNCC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DIACHI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SDT" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FAX" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="SANPHAMs" Relationship="Self.FK_SP_NCC" FromRole="NHACUNGCAP" ToRole="SANPHAM" />
+        </EntityType>
+        <EntityType Name="NHAKHO">
+          <Key>
+            <PropertyRef Name="MANK" />
+          </Key>
+          <Property Name="MANK" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENNK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DIACHI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="SANPHAMs" Relationship="Self.FK_SP_NK" FromRole="NHAKHO" ToRole="SANPHAM" />
+        </EntityType>
+        <EntityType Name="NHANVIEN">
+          <Key>
+            <PropertyRef Name="MANV" />
+          </Key>
+          <Property Name="MANV" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENNV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SEX" Type="Int32" Nullable="false" />
+          <Property Name="DIACHI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SDT" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="QUYEN" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DONHANGs" Relationship="Self.FK_DH_NV" FromRole="NHANVIEN" ToRole="DONHANG" />
+        </EntityType>
+        <EntityType Name="SANPHAM">
+          <Key>
+            <PropertyRef Name="MASP" />
+          </Key>
+          <Property Name="MASP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="THUONGHIEU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="THONGTIN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LOAISP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SOLUONG" Type="Int32" Nullable="false" />
+          <Property Name="GIANHAP" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="GIABAN" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="TIMENHAP" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="MANCC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MANK" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IMAGES" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="NHACUNGCAP" Relationship="Self.FK_SP_NCC" FromRole="SANPHAM" ToRole="NHACUNGCAP" />
+          <NavigationProperty Name="NHAKHO" Relationship="Self.FK_SP_NK" FromRole="SANPHAM" ToRole="NHAKHO" />
+          <NavigationProperty Name="THONGTINDONHANGs" Relationship="Self.FK_INFO_SP" FromRole="SANPHAM" ToRole="THONGTINDONHANG" />
+        </EntityType>
+        <EntityType Name="THONGTINDONHANG">
+          <Key>
+            <PropertyRef Name="MADH" />
+            <PropertyRef Name="MASP" />
+          </Key>
+          <Property Name="MADH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MASP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SOLUONG" Type="Int32" Nullable="false" />
+          <Property Name="TIEN" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="DONHANG" Relationship="Self.FK_INFO_DH" FromRole="THONGTINDONHANG" ToRole="DONHANG" />
+          <NavigationProperty Name="SANPHAM" Relationship="Self.FK_INFO_SP" FromRole="THONGTINDONHANG" ToRole="SANPHAM" />
+        </EntityType>
+        <EntityType Name="THONGKEDONHANGDABAN">
+          <Key>
+            <PropertyRef Name="MADH" />
+            <PropertyRef Name="TENKH" />
+            <PropertyRef Name="TENNV" />
+            <PropertyRef Name="TIMEXUAT" />
+            <PropertyRef Name="THANHTIEN" />
+          </Key>
+          <Property Name="MADH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENKH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TENNV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TIMEXUAT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="THANHTIEN" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="THONGKEDONHANGDABAN_1">
+          <Key>
+            <PropertyRef Name="MAKH" />
+            <PropertyRef Name="TENKH" />
+          </Key>
+          <Property Name="MAKH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TENKH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="THANHTIEN" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <Association Name="FK_DH_KH">
+          <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+          <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACHHANG">
+              <PropertyRef Name="MAKH" />
+            </Principal>
+            <Dependent Role="DONHANG">
+              <PropertyRef Name="MAKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DH_NV">
+          <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+          <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHANVIEN">
+              <PropertyRef Name="MANV" />
+            </Principal>
+            <Dependent Role="DONHANG">
+              <PropertyRef Name="MANV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INFO_DH">
+          <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="1" />
+          <End Role="THONGTINDONHANG" Type="Self.THONGTINDONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DONHANG">
+              <PropertyRef Name="MADH" />
+            </Principal>
+            <Dependent Role="THONGTINDONHANG">
+              <PropertyRef Name="MADH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SP_NCC">
+          <End Role="NHACUNGCAP" Type="Self.NHACUNGCAP" Multiplicity="1" />
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHACUNGCAP">
+              <PropertyRef Name="MANCC" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="MANCC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SP_NK">
+          <End Role="NHAKHO" Type="Self.NHAKHO" Multiplicity="1" />
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NHAKHO">
+              <PropertyRef Name="MANK" />
+            </Principal>
+            <Dependent Role="SANPHAM">
+              <PropertyRef Name="MANK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INFO_SP">
+          <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
+          <End Role="THONGTINDONHANG" Type="Self.THONGTINDONHANG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SANPHAM">
+              <PropertyRef Name="MASP" />
+            </Principal>
+            <Dependent Role="THONGTINDONHANG">
+              <PropertyRef Name="MASP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLTHONGTINMAYTINHEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DONHANGs" EntityType="Self.DONHANG" />
+          <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
+          <EntitySet Name="NHACUNGCAPs" EntityType="Self.NHACUNGCAP" />
+          <EntitySet Name="NHAKHOes" EntityType="Self.NHAKHO" />
+          <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
+          <EntitySet Name="SANPHAMs" EntityType="Self.SANPHAM" />
+          <EntitySet Name="THONGTINDONHANGs" EntityType="Self.THONGTINDONHANG" />
+          <EntitySet Name="THONGKEDONHANGDABANs" EntityType="Self.THONGKEDONHANGDABAN" />
+          <EntitySet Name="THONGKEDONHANGDABAN_1" EntityType="Self.THONGKEDONHANGDABAN_1" />
+          <AssociationSet Name="FK_DH_KH" Association="Self.FK_DH_KH">
+            <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+            <End Role="DONHANG" EntitySet="DONHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DH_NV" Association="Self.FK_DH_NV">
+            <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+            <End Role="DONHANG" EntitySet="DONHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INFO_DH" Association="Self.FK_INFO_DH">
+            <End Role="DONHANG" EntitySet="DONHANGs" />
+            <End Role="THONGTINDONHANG" EntitySet="THONGTINDONHANGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SP_NCC" Association="Self.FK_SP_NCC">
+            <End Role="NHACUNGCAP" EntitySet="NHACUNGCAPs" />
+            <End Role="SANPHAM" EntitySet="SANPHAMs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SP_NK" Association="Self.FK_SP_NK">
+            <End Role="NHAKHO" EntitySet="NHAKHOes" />
+            <End Role="SANPHAM" EntitySet="SANPHAMs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INFO_SP" Association="Self.FK_INFO_SP">
+            <End Role="SANPHAM" EntitySet="SANPHAMs" />
+            <End Role="THONGTINDONHANG" EntitySet="THONGTINDONHANGs" />
+          </AssociationSet>
+          <FunctionImport Name="loadINFORDONHANG" ReturnType="Collection(QLTHONGTINMAYTINHModel.loadINFORDONHANG_Result)">
+            <Parameter Name="MADH" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="seachName" ReturnType="Collection(QLTHONGTINMAYTINHModel.seachName_Result)">
+            <Parameter Name="Name" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SeachNameKhachHang" ReturnType="Collection(QLTHONGTINMAYTINHModel.SeachNameKhachHang_Result)">
+            <Parameter Name="TenKH" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SeachNameNhaCungCap" ReturnType="Collection(QLTHONGTINMAYTINHModel.SeachNameNhaCungCap_Result)">
+            <Parameter Name="TenNCC" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SeachNameNhaKHo" ReturnType="Collection(QLTHONGTINMAYTINHModel.SeachNameNhaKHo_Result)">
+            <Parameter Name="TenNK" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SeachNameSanPham" ReturnType="Collection(QLTHONGTINMAYTINHModel.SeachNameSanPham_Result)">
+            <Parameter Name="TenSP" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="ThongKe" ReturnType="Collection(QLTHONGTINMAYTINHModel.ThongKe_Result)" />
+          <FunctionImport Name="THONGKETHEONGAY" ReturnType="Collection(QLTHONGTINMAYTINHModel.THONGKETHEONGAY_Result)">
+            <Parameter Name="THONGKE" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="THONGKETHEOTHANG" ReturnType="Collection(QLTHONGTINMAYTINHModel.THONGKETHEOTHANG_Result)">
+            <Parameter Name="THONGKE" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="Top_5_SP" ReturnType="Collection(QLTHONGTINMAYTINHModel.Top_5_SP_Result)" />
+          <FunctionImport Name="Top_5_SP1" ReturnType="Collection(QLTHONGTINMAYTINHModel.Top_5_SP1_Result)" />
+          <FunctionImport Name="UpdateSoLuong">
+            <Parameter Name="MaSP" Mode="In" Type="String" />
+            <Parameter Name="soLuong" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="loadINFORDONHANG_Result">
+          <Property Type="String" Name="MASP" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENSP" Nullable="false" />
+          <Property Type="Int32" Name="SOLUONG" Nullable="false" />
+          <Property Type="Decimal" Name="GIABAN" Nullable="false" Precision="19" />
+        </ComplexType>
+        <ComplexType Name="seachName_Result">
+          <Property Type="String" Name="MANV" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENNV" Nullable="false" />
+          <Property Type="Int32" Name="SEX" Nullable="false" />
+          <Property Type="String" Name="DIACHI" Nullable="false" />
+          <Property Type="String" Name="SDT" Nullable="false" MaxLength="14" />
+          <Property Type="String" Name="EMAIL" Nullable="false" />
+          <Property Type="String" Name="PASSWORD" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="QUYEN" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SeachNameKhachHang_Result">
+          <Property Type="String" Name="MAKH" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENKH" Nullable="false" />
+          <Property Type="String" Name="SDT" Nullable="false" MaxLength="14" />
+          <Property Type="String" Name="DIACHI" Nullable="false" />
+          <Property Type="Int32" Name="status" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SeachNameNhaCungCap_Result">
+          <Property Type="String" Name="MANCC" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENNCC" Nullable="false" />
+          <Property Type="String" Name="DIACHI" Nullable="false" />
+          <Property Type="String" Name="SDT" Nullable="false" MaxLength="14" />
+          <Property Type="String" Name="FAX" Nullable="false" MaxLength="14" />
+          <Property Type="String" Name="EMAIL" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SeachNameNhaKHo_Result">
+          <Property Type="String" Name="MANK" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENNK" Nullable="false" />
+          <Property Type="String" Name="DIACHI" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SeachNameSanPham_Result">
+          <Property Type="String" Name="MASP" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENSP" Nullable="false" />
+          <Property Type="String" Name="THUONGHIEU" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="THONGTIN" Nullable="false" />
+          <Property Type="String" Name="LOAISP" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="SOLUONG" Nullable="false" />
+          <Property Type="Decimal" Name="GIANHAP" Nullable="false" Precision="19" />
+          <Property Type="Decimal" Name="GIABAN" Nullable="false" Precision="19" />
+          <Property Type="DateTime" Name="TIMENHAP" Nullable="false" Precision="23" />
+          <Property Type="String" Name="MANCC" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="MANK" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="IMAGES" Nullable="true" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="ThongKe_Result">
+          <Property Type="String" Name="MADH" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENKH" Nullable="false" />
+          <Property Type="String" Name="TENNV" Nullable="false" />
+          <Property Type="DateTime" Name="TIMEXUAT" Nullable="false" Precision="23" />
+          <Property Type="Decimal" Name="THANHTIEN" Nullable="false" Precision="19" />
+        </ComplexType>
+        <ComplexType Name="THONGKETHEONGAY_Result">
+          <Property Type="String" Name="MANV" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENNV" Nullable="false" />
+          <Property Type="Int32" Name="SEX" Nullable="false" />
+          <Property Type="String" Name="DIACHI" Nullable="false" />
+          <Property Type="String" Name="SDT" Nullable="false" MaxLength="14" />
+          <Property Type="String" Name="EMAIL" Nullable="false" />
+          <Property Type="String" Name="PASSWORD" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="QUYEN" Nullable="false" />
+          <Property Type="String" Name="MADH" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="MAKH" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="MANV1" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="TIMEXUAT" Nullable="false" Precision="23" />
+          <Property Type="Decimal" Name="THANHTIEN" Nullable="false" Precision="19" />
+          <Property Type="String" Name="MAKH1" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENKH" Nullable="false" />
+          <Property Type="String" Name="SDT1" Nullable="false" MaxLength="14" />
+          <Property Type="String" Name="DIACHI1" Nullable="false" />
+          <Property Type="Int32" Name="status" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="THONGKETHEOTHANG_Result">
+          <Property Type="String" Name="MADH" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENKH" Nullable="false" />
+          <Property Type="String" Name="TENNV" Nullable="false" />
+          <Property Type="DateTime" Name="TIMEXUAT" Nullable="false" Precision="23" />
+          <Property Type="Decimal" Name="THANHTIEN" Nullable="false" Precision="19" />
+        </ComplexType>
+        <ComplexType Name="Top_5_SP_Result">
+          <Property Type="String" Name="MASP" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENSP" Nullable="false" />
+          <Property Type="String" Name="IMAGES" Nullable="true" MaxLength="20" />
+          <Property Type="Int32" Name="M" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Top_5_SP1_Result">
+          <Property Type="String" Name="MASP" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="TENSP" Nullable="false" />
+          <Property Type="String" Name="IMAGES" Nullable="true" MaxLength="20" />
+          <Property Type="Int32" Name="M" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLTHONGTINMAYTINHModelStoreContainer" CdmEntityContainer="QLTHONGTINMAYTINHEntities1">
+          <EntitySetMapping Name="DONHANGs">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.DONHANG">
+              <MappingFragment StoreEntitySet="DONHANG">
+                <ScalarProperty Name="MADH" ColumnName="MADH" />
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+                <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KHACHHANGs">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.KHACHHANG">
+              <MappingFragment StoreEntitySet="KHACHHANG">
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NHACUNGCAPs">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.NHACUNGCAP">
+              <MappingFragment StoreEntitySet="NHACUNGCAP">
+                <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+                <ScalarProperty Name="TENNCC" ColumnName="TENNCC" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NHAKHOes">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.NHAKHO">
+              <MappingFragment StoreEntitySet="NHAKHO">
+                <ScalarProperty Name="MANK" ColumnName="MANK" />
+                <ScalarProperty Name="TENNK" ColumnName="TENNK" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NHANVIENs">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.NHANVIEN">
+              <MappingFragment StoreEntitySet="NHANVIEN">
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SANPHAMs">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.SANPHAM">
+              <MappingFragment StoreEntitySet="SANPHAM">
+                <ScalarProperty Name="MASP" ColumnName="MASP" />
+                <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+                <ScalarProperty Name="THUONGHIEU" ColumnName="THUONGHIEU" />
+                <ScalarProperty Name="THONGTIN" ColumnName="THONGTIN" />
+                <ScalarProperty Name="LOAISP" ColumnName="LOAISP" />
+                <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+                <ScalarProperty Name="GIANHAP" ColumnName="GIANHAP" />
+                <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+                <ScalarProperty Name="TIMENHAP" ColumnName="TIMENHAP" />
+                <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+                <ScalarProperty Name="MANK" ColumnName="MANK" />
+                <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="THONGTINDONHANGs">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGTINDONHANG">
+              <MappingFragment StoreEntitySet="THONGTINDONHANG">
+                <ScalarProperty Name="MADH" ColumnName="MADH" />
+                <ScalarProperty Name="MASP" ColumnName="MASP" />
+                <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+                <ScalarProperty Name="TIEN" ColumnName="TIEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="THONGKEDONHANGDABANs">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKEDONHANGDABAN">
+              <MappingFragment StoreEntitySet="THONGKEDONHANGDABAN">
+                <ScalarProperty Name="MADH" ColumnName="MADH" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+                <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+                <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="THONGKEDONHANGDABAN_1">
+            <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKEDONHANGDABAN_1">
+              <MappingFragment StoreEntitySet="THONGKEDONHANGDABAN_1">
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="loadINFORDONHANG" FunctionName="QLTHONGTINMAYTINHModel.Store.loadINFORDONHANG">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.loadINFORDONHANG_Result">
+                <ScalarProperty Name="MASP" ColumnName="MASP" />
+                <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+                <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+                <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="seachName" FunctionName="QLTHONGTINMAYTINHModel.Store.seachName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.seachName_Result">
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SeachNameKhachHang" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameKhachHang">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameKhachHang_Result">
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SeachNameNhaCungCap" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameNhaCungCap">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameNhaCungCap_Result">
+                <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+                <ScalarProperty Name="TENNCC" ColumnName="TENNCC" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SeachNameNhaKHo" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameNhaKHo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameNhaKHo_Result">
+                <ScalarProperty Name="MANK" ColumnName="MANK" />
+                <ScalarProperty Name="TENNK" ColumnName="TENNK" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SeachNameSanPham" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameSanPham">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameSanPham_Result">
+                <ScalarProperty Name="MASP" ColumnName="MASP" />
+                <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+                <ScalarProperty Name="THUONGHIEU" ColumnName="THUONGHIEU" />
+                <ScalarProperty Name="THONGTIN" ColumnName="THONGTIN" />
+                <ScalarProperty Name="LOAISP" ColumnName="LOAISP" />
+                <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+                <ScalarProperty Name="GIANHAP" ColumnName="GIANHAP" />
+                <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+                <ScalarProperty Name="TIMENHAP" ColumnName="TIMENHAP" />
+                <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+                <ScalarProperty Name="MANK" ColumnName="MANK" />
+                <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="ThongKe" FunctionName="QLTHONGTINMAYTINHModel.Store.ThongKe">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.ThongKe_Result">
+                <ScalarProperty Name="MADH" ColumnName="MADH" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+                <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+                <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="THONGKETHEONGAY" FunctionName="QLTHONGTINMAYTINHModel.Store.THONGKETHEONGAY">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKETHEONGAY_Result">
+                <ScalarProperty Name="MANV" ColumnName="MANV" />
+                <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+                <ScalarProperty Name="MADH" ColumnName="MADH" />
+                <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+                <ScalarProperty Name="MANV1" ColumnName="MANV1" />
+                <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+                <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+                <ScalarProperty Name="MAKH1" ColumnName="MAKH1" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="SDT1" ColumnName="SDT1" />
+                <ScalarProperty Name="DIACHI1" ColumnName="DIACHI1" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="THONGKETHEOTHANG" FunctionName="QLTHONGTINMAYTINHModel.Store.THONGKETHEOTHANG">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKETHEOTHANG_Result">
+                <ScalarProperty Name="MADH" ColumnName="MADH" />
+                <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+                <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+                <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+                <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Top_5_SP" FunctionName="QLTHONGTINMAYTINHModel.Store.Top_5_SP">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.Top_5_SP_Result">
+                <ScalarProperty Name="MASP" ColumnName="MASP" />
+                <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+                <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+                <ScalarProperty Name="M" ColumnName="M" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Top_5_SP1" FunctionName="QLTHONGTINMAYTINHModel.Store.Top_5_SP1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.Top_5_SP1_Result">
+                <ScalarProperty Name="MASP" ColumnName="MASP" />
+                <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+                <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+                <ScalarProperty Name="M" ColumnName="M" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="UpdateSoLuong" FunctionName="QLTHONGTINMAYTINHModel.Store.UpdateSoLuong" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

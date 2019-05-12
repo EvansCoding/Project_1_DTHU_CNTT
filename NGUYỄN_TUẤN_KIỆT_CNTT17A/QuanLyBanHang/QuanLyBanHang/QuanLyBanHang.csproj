@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B110F2D-D6C9-4060-8C4F-9556906FBDFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyBanHang</RootNamespace>
+    <AssemblyName>QuanLyBanHang</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\cImages.cs" />
+    <Compile Include="Class\cTTDONHANG.cs" />
+    <Compile Include="Controllers\US_BanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_BanHang.Designer.cs">
+      <DependentUpon>US_BanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\US_KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_KhachHang.Designer.cs">
+      <DependentUpon>US_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\US_NhaCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_NhaCungCap.Designer.cs">
+      <DependentUpon>US_NhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\US_NhaKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_NhaKho.Designer.cs">
+      <DependentUpon>US_NhaKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\US_NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_NhanVien.Designer.cs">
+      <DependentUpon>US_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\US_SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_SanPham.Designer.cs">
+      <DependentUpon>US_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\US_ThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_ThongKe.Designer.cs">
+      <DependentUpon>US_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\US_ThongKeBanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\US_ThongKeBanHang.Designer.cs">
+      <DependentUpon>US_ThongKeBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BUS\DonHangBUS.cs" />
+    <Compile Include="Models\BUS\KhachHangBUS.cs" />
+    <Compile Include="Models\BUS\NhaCungCapBUS.cs" />
+    <Compile Include="Models\BUS\NhaKhoBUS.cs" />
+    <Compile Include="Models\BUS\NhanVienBUS.cs" />
+    <Compile Include="Models\BUS\SanPhamBUS.cs" />
+    <Compile Include="Models\BUS\ThongKe.cs" />
+    <Compile Include="Models\BUS\ThongTinDonHangBUS.cs" />
+    <Compile Include="Models\DONHANG.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KHACHHANG.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\loadINFORDONHANG_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NHACUNGCAP.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NHAKHO.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NHANVIEN.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLBANHANG.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBANHANG.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLBANHANG.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLBANHANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBANHANG.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SANPHAM.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SeachNameKhachHang_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SeachNameNhaCungCap_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SeachNameNhaKHo_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SeachNameSanPham_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\seachName_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THONGKEDONHANGDABAN.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THONGKEDONHANGDABAN_1.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THONGKETHEONGAY_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THONGKETHEOTHANG_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThongKe_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THONGTINDONHANG.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Top_5_SP1_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Top_5_SP_Result.cs">
+      <DependentUpon>QLBANHANG.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\finfoBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\finfoBanHang.Designer.cs">
+      <DependentUpon>finfoBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Main\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Main\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Nhà Cung Cấp\fAddNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Nhà Cung Cấp\fAddNhaCungCap.Designer.cs">
+      <DependentUpon>fAddNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Nhà Kho\fAddNhaKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Nhà Kho\fAddNhaKho.Designer.cs">
+      <DependentUpon>fAddNhaKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Nhân Viên\fAddNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Nhân Viên\fAddNhanVien.Designer.cs">
+      <DependentUpon>fAddNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Sản Phẩm\fAddInfoSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Sản Phẩm\fAddInfoSanPham.Designer.cs">
+      <DependentUpon>fAddInfoSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Thống Kê Bán Hàng\fShowDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Thống Kê Bán Hàng\fShowDonHang.Designer.cs">
+      <DependentUpon>fShowDonHang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controllers\US_BanHang.resx">
+      <DependentUpon>US_BanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\US_KhachHang.resx">
+      <DependentUpon>US_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\US_NhaCungCap.resx">
+      <DependentUpon>US_NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\US_NhaKho.resx">
+      <DependentUpon>US_NhaKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\US_NhanVien.resx">
+      <DependentUpon>US_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\US_SanPham.resx">
+      <DependentUpon>US_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\US_ThongKe.resx">
+      <DependentUpon>US_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\US_ThongKeBanHang.resx">
+      <DependentUpon>US_ThongKeBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\finfoBanHang.resx">
+      <DependentUpon>finfoBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Main\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Nhà Cung Cấp\fAddNhaCungCap.resx">
+      <DependentUpon>fAddNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Nhà Kho\fAddNhaKho.resx">
+      <DependentUpon>fAddNhaKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Nhân Viên\fAddNhanVien.resx">
+      <DependentUpon>fAddNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Sản Phẩm\fAddInfoSanPham.resx">
+      <DependentUpon>fAddInfoSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Thống Kê Bán Hàng\fShowDonHang.resx">
+      <DependentUpon>fShowDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Models\QLBANHANG.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLBANHANG.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\QLBANHANG.edmx.diagram">
+      <DependentUpon>QLBANHANG.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\assistant-24.ico" />
+    <Content Include="Asset\Images\dell001.jpg" />
+    <Content Include="Asset\Images\dell002.jpg" />
+    <Content Include="Asset\Images\dell003.jpg" />
+    <Content Include="Asset\Images\dell004.png" />
+    <Content Include="Asset\Images\hp001.jpg" />
+    <Content Include="Asset\Images\hp002.jpg" />
+    <Content Include="Asset\Images\hp003.jpg" />
+    <Content Include="Asset\Images\mac001.jpg" />
+    <Content Include="Asset\Images\mac002.jpg" />
+    <Content Include="Models\QLBANHANG.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBANHANG.edmx</DependentUpon>
+      <LastGenOutput>QLBANHANG.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QLBANHANG.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBANHANG.edmx</DependentUpon>
+      <LastGenOutput>QLBANHANG.cs</LastGenOutput>
+    </Content>
+    <None Include="Asset\icon\icons8_sales_performance_50px.png" />
+    <None Include="Asset\icon\icons8_sale_50px_1.png" />
+    <None Include="Asset\icon\card_in_use_filled_50px.png" />
+    <None Include="Asset\close-window-32.ico" />
+    <Content Include="Asset\conference-24.ico" />
+    <Content Include="Asset\database-2-24.ico" />
+    <Content Include="Asset\group-24.ico" />
+    <None Include="Asset\home-24.ico" />
+    <Content Include="Asset\home-6-24.ico" />
+    <Content Include="Asset\product-24.ico" />
+    <Content Include="Asset\shop-24.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

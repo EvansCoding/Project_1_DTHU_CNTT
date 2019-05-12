@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLTHONGTINMAYTINHModelStoreContainer" CdmEntityContainer="QLTHONGTINMAYTINHEntities1">
+    <EntitySetMapping Name="DONHANGs">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.DONHANG">
+        <MappingFragment StoreEntitySet="DONHANG">
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+          <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHACUNGCAPs">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.NHACUNGCAP">
+        <MappingFragment StoreEntitySet="NHACUNGCAP">
+          <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+          <ScalarProperty Name="TENNCC" ColumnName="TENNCC" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHAKHOes">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.NHAKHO">
+        <MappingFragment StoreEntitySet="NHAKHO">
+          <ScalarProperty Name="MANK" ColumnName="MANK" />
+          <ScalarProperty Name="TENNK" ColumnName="TENNK" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SANPHAMs">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.SANPHAM">
+        <MappingFragment StoreEntitySet="SANPHAM">
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+          <ScalarProperty Name="THUONGHIEU" ColumnName="THUONGHIEU" />
+          <ScalarProperty Name="THONGTIN" ColumnName="THONGTIN" />
+          <ScalarProperty Name="LOAISP" ColumnName="LOAISP" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="GIANHAP" ColumnName="GIANHAP" />
+          <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+          <ScalarProperty Name="TIMENHAP" ColumnName="TIMENHAP" />
+          <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+          <ScalarProperty Name="MANK" ColumnName="MANK" />
+          <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THONGTINDONHANGs">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGTINDONHANG">
+        <MappingFragment StoreEntitySet="THONGTINDONHANG">
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="TIEN" ColumnName="TIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THONGKEDONHANGDABANs">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKEDONHANGDABAN">
+        <MappingFragment StoreEntitySet="THONGKEDONHANGDABAN">
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+          <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THONGKEDONHANGDABAN_1">
+      <EntityTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKEDONHANGDABAN_1">
+        <MappingFragment StoreEntitySet="THONGKEDONHANGDABAN_1">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="loadINFORDONHANG" FunctionName="QLTHONGTINMAYTINHModel.Store.loadINFORDONHANG">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.loadINFORDONHANG_Result">
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="seachName" FunctionName="QLTHONGTINMAYTINHModel.Store.seachName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.seachName_Result">
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeachNameKhachHang" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameKhachHang">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameKhachHang_Result">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeachNameNhaCungCap" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameNhaCungCap">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameNhaCungCap_Result">
+          <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+          <ScalarProperty Name="TENNCC" ColumnName="TENNCC" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeachNameNhaKHo" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameNhaKHo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameNhaKHo_Result">
+          <ScalarProperty Name="MANK" ColumnName="MANK" />
+          <ScalarProperty Name="TENNK" ColumnName="TENNK" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SeachNameSanPham" FunctionName="QLTHONGTINMAYTINHModel.Store.SeachNameSanPham">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.SeachNameSanPham_Result">
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+          <ScalarProperty Name="THUONGHIEU" ColumnName="THUONGHIEU" />
+          <ScalarProperty Name="THONGTIN" ColumnName="THONGTIN" />
+          <ScalarProperty Name="LOAISP" ColumnName="LOAISP" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="GIANHAP" ColumnName="GIANHAP" />
+          <ScalarProperty Name="GIABAN" ColumnName="GIABAN" />
+          <ScalarProperty Name="TIMENHAP" ColumnName="TIMENHAP" />
+          <ScalarProperty Name="MANCC" ColumnName="MANCC" />
+          <ScalarProperty Name="MANK" ColumnName="MANK" />
+          <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ThongKe" FunctionName="QLTHONGTINMAYTINHModel.Store.ThongKe">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.ThongKe_Result">
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+          <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="THONGKETHEONGAY" FunctionName="QLTHONGTINMAYTINHModel.Store.THONGKETHEONGAY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKETHEONGAY_Result">
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="QUYEN" ColumnName="QUYEN" />
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="MANV1" ColumnName="MANV1" />
+          <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+          <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+          <ScalarProperty Name="MAKH1" ColumnName="MAKH1" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="SDT1" ColumnName="SDT1" />
+          <ScalarProperty Name="DIACHI1" ColumnName="DIACHI1" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="THONGKETHEOTHANG" FunctionName="QLTHONGTINMAYTINHModel.Store.THONGKETHEOTHANG">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.THONGKETHEOTHANG_Result">
+          <ScalarProperty Name="MADH" ColumnName="MADH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="TIMEXUAT" ColumnName="TIMEXUAT" />
+          <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Top_5_SP" FunctionName="QLTHONGTINMAYTINHModel.Store.Top_5_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.Top_5_SP_Result">
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+          <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+          <ScalarProperty Name="M" ColumnName="M" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Top_5_SP1" FunctionName="QLTHONGTINMAYTINHModel.Store.Top_5_SP1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLTHONGTINMAYTINHModel.Top_5_SP1_Result">
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+          <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+          <ScalarProperty Name="M" ColumnName="M" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UpdateSoLuong" FunctionName="QLTHONGTINMAYTINHModel.Store.UpdateSoLuong" />
+  </EntityContainerMapping>
+</Mapping>

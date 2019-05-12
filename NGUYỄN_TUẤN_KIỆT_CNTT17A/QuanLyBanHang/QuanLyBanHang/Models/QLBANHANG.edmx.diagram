@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="74da2d3c8b1a431ab1152cd46a96d8e9" Name="Diagram1">
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.DONHANG" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.NHACUNGCAP" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.NHAKHO" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.SANPHAM" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.THONGTINDONHANG" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.THONGKEDONHANGDABAN" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTHONGTINMAYTINHModel.THONGKEDONHANGDABAN_1" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="QLTHONGTINMAYTINHModel.FK_DH_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTHONGTINMAYTINHModel.FK_DH_NV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTHONGTINMAYTINHModel.FK_INFO_DH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTHONGTINMAYTINHModel.FK_SP_NCC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTHONGTINMAYTINHModel.FK_SP_NK" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTHONGTINMAYTINHModel.FK_INFO_SP" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
